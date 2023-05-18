@@ -1,12 +1,10 @@
-version: '3'
+version: "3"
 services:
   nuxt:
-    build: .
-    stdin_open: true
-    tty: true
-    ports:
-      - "8080:8080"
+    container_name: nuxt
+    image: node:18
+    command: yarn dev
     volumes:
-      - "/app/node_modules"
-      - ".:/app"
-
+      - ./:/srv/app
+    working_dir: /srv/app
+    network_mode: host

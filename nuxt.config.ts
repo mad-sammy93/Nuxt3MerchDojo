@@ -2,18 +2,18 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss'],
     app: {
-        head:{
+        head: {
             title: 'Nuxt Dojo',
             meta: [
                 {
-                    name: 'description' , 
+                    name: 'description',
                     content: 'Evertthing about nuxt 3'
                 }
             ],
             link: [
                 {
-                    rel: 'stylesheet', 
-                    href :'https://fonts.googleapis.com/icon?family=Material+Icons'
+                    rel: 'stylesheet',
+                    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
                 }
             ]
         }
